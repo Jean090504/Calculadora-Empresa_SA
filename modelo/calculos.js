@@ -5,15 +5,14 @@
 * Versão 1.0
 ********************************************************************************************************************************************/
 //Função para realizar a soma de dois números
-function calcularSoma(numero1, numero2, operacaoEscolhida, entradaDados) {
+function calcularSoma(numero1, numero2, operacaoEscolhida) {
     //Converter os números para o formato numérico, substituindo vírgula por ponto
     let n1 = Number(String(numero1).replace(',', '.'))
     let n2 = Number(String(numero2).replace(',', '.'))  
 
     //Verificar se a operação escolhida é soma para exibir o resultado da soma
     if (operacaoEscolhida == 'soma') {
-        console.log(`O resultado da soma é: ${Number(n1) + Number(n2)}`)
-        return true
+        return n1 + n2
     } else{
         return false
     }
@@ -21,7 +20,7 @@ function calcularSoma(numero1, numero2, operacaoEscolhida, entradaDados) {
 }
 
 //Função para realizar a subtração de dois números
-function calcularSubtracao(numero1, numero2, operacaoEscolhida, entradaDados) {
+function calcularSubtracao(numero1, numero2, operacaoEscolhida) {
     //Converter os números para o formato numérico, substituindo vírgula por ponto
     let n1 = Number(String(numero1).replace(',', '.'))
     let n2 = Number(String(numero2).replace(',', '.'))    
@@ -37,7 +36,7 @@ function calcularSubtracao(numero1, numero2, operacaoEscolhida, entradaDados) {
 }
 
 //Função para realizar a multiplicação de dois números
-function calcularMultiplicacao(numero1, numero2, operacaoEscolhida, entradaDados) {
+function calcularMultiplicacao(numero1, numero2, operacaoEscolhida) {
     //Converter os números para o formato numérico, substituindo vírgula por ponto
     let n1 = Number(String(numero1).replace(',', '.'))
     let n2 = Number(String(numero2).replace(',', '.'))   
@@ -52,7 +51,7 @@ function calcularMultiplicacao(numero1, numero2, operacaoEscolhida, entradaDados
 }
 
 //Função para realizar a divisão de dois números
-function calcularDivisao(numero1, numero2, operacaoEscolhida, entradaDados) {
+function calcularDivisao(numero1, numero2, operacaoEscolhida) {
     //Converter os números para o formato numérico, substituindo vírgula por ponto
     let n1 = Number(String(numero1).replace(',', '.'))
     let n2 = Number(String(numero2).replace(',', '.'))   

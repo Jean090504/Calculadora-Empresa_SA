@@ -44,10 +44,16 @@ entradaDados.question('Digite qual a operação deseja realizar: \n Soma \n Subt
             tratativas.tratativaNumero(numero2)
 
             //Realizar os cálculos para a operação escolhida
-            calculos.calcularSoma(numero1, numero2, operacaoEscolhida, entradaDados)
-            calculos.calcularSubtracao(numero1, numero2, operacaoEscolhida, entradaDados)
-            calculos.calcularMultiplicacao(numero1, numero2, operacaoEscolhida, entradaDados)
-            calculos.calcularDivisao(numero1, numero2, operacaoEscolhida, entradaDados)
+            calculos.calcularSoma(numero1, numero2, operacaoEscolhida)
+
+            if(calculos.calcularSoma(numero1, numero2, operacaoEscolhida) == false){
+                console.log('A operação escolhida não é soma, portanto o resultado da soma não será exibido.')
+
+            }
+
+            calculos.calcularSubtracao(numero1, numero2, operacaoEscolhida)
+            calculos.calcularMultiplicacao(numero1, numero2, operacaoEscolhida)
+            calculos.calcularDivisao(numero1, numero2, operacaoEscolhida)
         })
     })
 })
