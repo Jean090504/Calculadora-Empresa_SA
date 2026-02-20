@@ -46,10 +46,30 @@ entradaDados.question('Digite qual a operação deseja realizar: \n Soma \n Subt
             //Realizar os cálculos para a operação escolhida
             calculos.calcularSoma(numero1, numero2, operacaoEscolhida)
 
-            if(calculos.calcularSoma(numero1, numero2, operacaoEscolhida) == false){
-                console.log('A operação escolhida não é soma, portanto o resultado da soma não será exibido.')
-
+            if(calculos.calcularSoma(numero1, numero2, operacaoEscolhida) !== false){
+                let resultadoSoma = calculos.calcularSoma(numero1, numero2, operacaoEscolhida)
+                console.log(`O resultado da soma é: ${Number(resultadoSoma)}`)
+                entradaDados.close()
             }
+
+            if( calculos.calcularSubtracao(numero1, numero2, operacaoEscolhida) !== false){
+                let resultadoSubtracao = calculos.calcularSubtracao(numero1, numero2, operacaoEscolhida)
+                console.log(`O resultado da subtração é: ${Number(resultadoSubtracao)}`)
+                entradaDados.close()
+            }
+
+            if( calculos.calcularMultiplicacao(numero1, numero2, operacaoEscolhida) !== false){
+                let resultadoMultiplicacao = calculos.calcularMultiplicacao(numero1, numero2, operacaoEscolhida)
+                console.log(`O resultado da multiplicação é: ${Number(resultadoMultiplicacao)}`)
+                entradaDados.close()
+            }
+
+            if( calculos.calcularDivisao(numero1, numero2, operacaoEscolhida) !== false){
+                let resultadoDivisao = calculos.calcularDivisao(numero1, numero2, operacaoEscolhida)
+                console.log(`O resultado da divisão é: ${Number(resultadoDivisao)}`)
+                entradaDados.close()
+            }
+
 
             calculos.calcularSubtracao(numero1, numero2, operacaoEscolhida)
             calculos.calcularMultiplicacao(numero1, numero2, operacaoEscolhida)

@@ -27,8 +27,7 @@ function calcularSubtracao(numero1, numero2, operacaoEscolhida) {
 
     //Verificar se a operação escolhida é subtração para exibir o resultado da subtração
     if(operacaoEscolhida == 'subtracao' || operacaoEscolhida == 'subtração' || operacaoEscolhida == 'subtraçao') {
-        console.log(`O resultado da subtração é: ${Number(n1) - Number(n2)}`)
-        return true
+        return n1 - n2
     } else{
         return false
     }
@@ -43,8 +42,7 @@ function calcularMultiplicacao(numero1, numero2, operacaoEscolhida) {
 
     //Verificar se a operação escolhida é multiplicação para exibir o resultado da multiplicação
     if(operacaoEscolhida == 'multiplicacao' || operacaoEscolhida == 'multiplicação' || operacaoEscolhida == 'multiplicaçao') {
-        console.log(`O resultado da multiplicação é: ${Number(n1) * Number(n2)}`)
-        return true
+        return n1 * n2
     } else{
         return false
     }
@@ -58,8 +56,7 @@ function calcularDivisao(numero1, numero2, operacaoEscolhida) {
 
     //Verificar se a operação escolhida é divisão para exibir o resultado da divisão
     if(operacaoEscolhida == 'divisao' || operacaoEscolhida == 'divisão') {
-        console.log(`O resultado da divisão é: ${Number(n1) / Number(n2)}`)
-        return true
+        return n1 / n2
     } else{
         return false
     }
