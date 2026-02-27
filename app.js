@@ -8,7 +8,7 @@
 //App.js apenas entrada de dados 
 
 //Import da biblioteca para entrada de dados
-var readline = require('readline');
+const readline = require('readline');
 
 const entradaDados = readline.createInterface({
     input: process.stdin,
